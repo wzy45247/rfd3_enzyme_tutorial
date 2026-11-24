@@ -1,0 +1,17 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.log
+
+OUTPUT_DIR/
+complete_outputs/
+
+# 大型结构和轨迹输出
+*.xtc
+*.trr
+*.dcd
+*.npy
+*.npz
+*.pt
+*.ckpt
