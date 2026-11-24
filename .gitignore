@@ -1,11 +1,12 @@
 .DS_Store
+._*
+__MACOSX/
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
 *.log
 
 OUTPUT_DIR/
-complete_outputs/
 
 # 大型结构和轨迹输出
 *.xtc

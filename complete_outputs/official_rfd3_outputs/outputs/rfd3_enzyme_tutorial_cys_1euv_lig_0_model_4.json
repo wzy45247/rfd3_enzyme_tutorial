@@ -1,0 +1,86 @@
+{
+    "diffused_index_map": {
+        "A514": "A10",
+        "A531": "A136",
+        "A574": "A137",
+        "A579": "A173",
+        "A580": "A174",
+        "A581": "A175"
+    },
+    "metrics": {
+        "join_point_rmsd_by_token": {
+            "A514": 0.310056209564209,
+            "A531": 1.5821994543075562,
+            "A574": 0.9751660227775574
+        },
+        "insertion.mae": 0.770180677374204,
+        "insertion.rmcd": 0.5037486180663109,
+        "insertion_rmsd": 0.5365958958864212,
+        "join_point_rmsd": 0.9558072288831075,
+        "n_conjoined_residues": 0,
+        "max_ca_deviation": 0.11566853523254395,
+        "n_chainbreaks": 0,
+        "n_clashing.interresidue_clashes_w_sidechain": 0,
+        "n_clashing.interresidue_clashes_w_backbone": 0,
+        "n_clashing.ligand_clashes": 0,
+        "n_clashing.ligand_min_distance": 3.075226068496704,
+        "non_loop_fraction": 0.5268817204301075,
+        "loop_fraction": 0.4731182795698925,
+        "helix_fraction": 0.3709677419354839,
+        "sheet_fraction": 0.15591397849462366,
+        "num_ss_elements": 10,
+        "radius_of_gyration": 15.15775346535083,
+        "alanine_content": 0.2275132275132275,
+        "glycine_content": 0.05291005291005291,
+        "num_residues": 189,
+        "diffused_com": [
+            0.39902299642562866,
+            3.296812057495117,
+            -3.1778998374938965
+        ],
+        "fixed_com": [
+            -1.1695507764816284,
+            -0.05185546725988388,
+            1.0773437023162842
+        ]
+    },
+    "specification": {
+        "input": "/home/rclune/rfd3_tests/enzyme_design_tutorial/1euv_lig.pdb",
+        "unindex": "A514,A531,A574,A579-581",
+        "length": "100-200",
+        "ligand": "l:g",
+        "extra": {
+            "example": "cys_1euv_lig",
+            "task_name": "rfd3_enzyme_tutorial_cys_1euv_lig",
+            "sampled_contig": "189",
+            "num_tokens_in": 196,
+            "num_residues_in": 196,
+            "num_chains": 2,
+            "num_atoms": 995,
+            "num_residues": 198,
+            "example_id": "rfd3_enzyme_tutorial_cys_1euv_lig_0"
+        },
+        "select_fixed_atoms": {
+            "A514": "NE2,CE1,ND1,CD2,CG,CB",
+            "A531": "OD1,CG,OD2,CB",
+            "A574": "NE2,CD,OE1,CG",
+            "A579": "C,O,CA,N",
+            "A580": "SG,CB,CA,N,C,O",
+            "A581": "C,O,CA,N"
+        },
+        "select_unfixed_sequence": "A579,A581",
+        "select_buried": {
+            "l:g": "O1,C8,O3,C4,C5,C23,C24,C25,C26,C27"
+        },
+        "select_exposed": {
+            "l:g": "C2,C22,C19,C18,C17,C20,C16,C15,O21,O14,C13,C12"
+        },
+        "ori_token": [
+            0.0,
+            1.0,
+            0.0
+        ]
+    },
+    "ckpt_path": "/home/rclune/foundry_weights/rfd3_latest.ckpt",
+    "seed": null
+}

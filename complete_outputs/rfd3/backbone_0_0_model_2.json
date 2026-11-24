@@ -1,0 +1,85 @@
+{
+    "diffused_index_map": {
+        "A514": "A93",
+        "A531": "A78",
+        "A574": "A50",
+        "A579": "A31",
+        "A580": "A32",
+        "A581": "A33"
+    },
+    "metrics": {
+        "join_point_rmsd_by_token": {
+            "A514": 0.9670917391777039,
+            "A531": 0.3521654009819031,
+            "A574": 0.32332420349121094
+        },
+        "insertion.mae": 0.5642318775256475,
+        "insertion.rmcd": 0.3792542964220047,
+        "insertion_rmsd": 0.3998357653617859,
+        "join_point_rmsd": 0.5475271145502726,
+        "n_conjoined_residues": 0,
+        "max_ca_deviation": 0.13392400741577148,
+        "n_chainbreaks": 0,
+        "n_clashing.interresidue_clashes_w_sidechain": 0,
+        "n_clashing.interresidue_clashes_w_backbone": 0,
+        "n_clashing.ligand_clashes": 0,
+        "n_clashing.ligand_min_distance": 3.364626169204712,
+        "non_loop_fraction": 0.4794520547945206,
+        "loop_fraction": 0.5205479452054794,
+        "helix_fraction": 0.08904109589041095,
+        "sheet_fraction": 0.3904109589041096,
+        "num_ss_elements": 11,
+        "radius_of_gyration": 14.536376995801552,
+        "alanine_content": 0.1342281879194631,
+        "glycine_content": 0.0738255033557047,
+        "num_residues": 149,
+        "diffused_com": [
+            -1.0053588151931763,
+            -0.9518211483955383,
+            -1.5826541185379028
+        ],
+        "fixed_com": [
+            -1.168839693069458,
+            -0.05185992270708084,
+            1.077219843864441
+        ]
+    },
+    "specification": {
+        "input": "/Users/wzy/Documents/\u8bba\u6587\u590d\u73b0/foundry-production/models/rfd3/docs/tutorials/enzyme_tutorial_files/1euv_lig.pdb",
+        "unindex": "A514,A531,A574,A579-581",
+        "length": "100-200",
+        "ligand": "l:g",
+        "extra": {
+            "example_id": "backbone_0_0",
+            "sampled_contig": "149P",
+            "task_name": "backbone_0",
+            "num_tokens_in": 156,
+            "num_residues_in": 156,
+            "num_chains": 2,
+            "num_atoms": 795,
+            "num_residues": 157
+        },
+        "select_fixed_atoms": {
+            "A514": "NE2,CE1,ND1,CD2,CG,CB",
+            "A531": "OD1,CG,OD2,CB",
+            "A574": "NE2,CD,OE1,CG",
+            "A579": "C,O,CA,N",
+            "A580": "SG,CB,CA,N,C,O",
+            "A581": "C,O,CA,N"
+        },
+        "select_unfixed_sequence": "A579,A581",
+        "select_buried": {
+            "l:g": "O1,C8,O3,C4,C5,C23,C24,C25,C26,C27"
+        },
+        "select_exposed": {
+            "l:g": "C2,C22,C19,C18,C17,C20,C16,C15,O21,O14,C13,C12"
+        },
+        "ori_token": [
+            0.0,
+            1.0,
+            0.0
+        ]
+    },
+    "ckpt_path": "/Users/wzy/Documents/\u8bba\u6587\u590d\u73b0/foundry-production/checkpoints/rfd3_latest.ckpt",
+    "seed": 0
+}
